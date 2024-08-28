@@ -1,17 +1,18 @@
+import TableCell from '@mui/material/TableCell';
+import TableRow from '@mui/material/TableRow';
+
 import DataStore from '../../stores/dataStore';
 import ScheduleCell from './cell';
 
 const ScheduleRow = ({ room }) => (
-  <tr>
-    <td
-      style={{ border: '1px solid gray', minWidth: 120, whiteSpace: 'nowrap' }}
-    >
+  <TableRow>
+    <TableCell sx={{ minWidth: 120, whiteSpace: 'nowrap' }}>
       {room.name}
-    </td>
+    </TableCell>
     {DataStore.days?.map((day) => (
       <ScheduleCell room={room} day={day} key={day} />
     ))}
-  </tr>
+  </TableRow>
 );
 
 export default ScheduleRow;

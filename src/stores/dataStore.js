@@ -12,7 +12,7 @@ class DataStore {
       { id: 9, name: 'Малу' },
       { id: 10, name: 'Мейханаджян' },
     ];
-    this.rooms = Array(30)
+    this.rooms = Array(25)
       .fill(0)
       .map((_, i) => ({ id: i + 1, name: `Комната ${i + 1}` }));
 

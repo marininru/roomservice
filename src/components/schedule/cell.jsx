@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import TableCell from '@mui/material/TableCell';
+
 import DataStore from '../../stores/dataStore';
 
 const ScheduleCell = ({ room, day }) => {
@@ -15,12 +17,13 @@ const ScheduleCell = ({ room, day }) => {
   };
 
   return (
-    <td
-      style={{ border: '1px solid gray', minWidth: 100 }}
+    <TableCell
+      align="center"
+      sx={{ borderLeft: '1px solid lightgray', minWidth: 100 }}
       onDoubleClick={() => handleClick()}
     >
       {person?.name}
-    </td>
+    </TableCell>
   );
 };
 
