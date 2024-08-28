@@ -1,5 +1,5 @@
 import React from 'react';
-import Schedule from '../components/schedule';
+import Schedule from '../components/schedule/index';
 
 const MainPage = () => {
   return (
