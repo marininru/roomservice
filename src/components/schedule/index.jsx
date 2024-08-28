@@ -6,7 +6,6 @@ const Schedule = () => {
   return (
     <table
       style={{
-        border: '1px solid gray',
         borderCollapse: 'collapse',
       }}
     >
